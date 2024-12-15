@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <section class="py-5 position-relative wrapper">
+    <div class="container d-flex flex-column justify-content-center align-items-center">
+        <h1 class="py-2 position-relative">Create Account</h1>
+        <form id="register-form" class="w-100 p-3 py-4 mt-5 d-flex flex-column justify-content-center align-items-center gap-4">
+            <div class="form-floating mb-3">
+                <input type="email" placeholder="Enter your email" id="register-email" class="form-control">
+                <label for="register-email">Email</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="password" placeholder="Enter your password" id="register-password" class="form-control">
+                <label for="register-password">Password</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="text" placeholder="Enter your name" id="register-name" class="form-control">
+                <label for="register-name">UserName</label>
+            </div>
+            <button type="submit" class="btn btn-primary w-100">Sign Up</button>
+        </form>
+        <div id="register-error" style="color: red;"></div>
+        <p class="mt-3">Already have an account? <a href="login.html">Login</a></p>
+    </div>
+    </section>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script> <!-- Reference to the single JS file -->
+</body>
+</html>
